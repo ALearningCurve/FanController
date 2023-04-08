@@ -1,55 +1,43 @@
-# Eclipse
-.metadata
-.settings
-[Rr]elease
-[Dd]ebug
-.launch
+# Ignore gcc4mbed library - it should be compiled per branch per machine
+gcc4mbed/
 
-# Object files
-*.o
-*.ko
-*.obj
+# Ignore gcc4mbed release folders
+*/NUCLEO_F410RB/
+*/NUCLEO_L476RG/
+Release/
+Debug/
+Develop/
+
+# Ignore mbed-cmake library - it should be set up per machine
+mbed-cmake/
+*/CMakeFiles/
+*/CMakeCache.txt
+*/cmake_install.cmake
+
+
+# Ignore release folders
+build/
+
+# Ignore standard executables
 *.elf
-
-# Other
-**/CMakeFiles/*
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
 *.hex
+*.pyc
+*.pyo
+*.swp
 
-# Misc
-*.map
-*.m
-*.png
+# Ignore generated JLink files
+*.Jlink
+*.jlink
 
-# Eclipse CDT project files
-.cproject
-.project
-.settings/
+# Ignore workspace files
+*.code-workspace
+settings.json
+.hg
 
-# Vagrant directory
-.vagrant/
+# Ignore any release folders created by make
+NUCLEO_F410RB/
+NUCLEO_L476RG/
 
-# Include makefiles
-!Makefile
-*~
+# Ignore cortex-debug state
+.cortex-debug.*
 
-# Libraries
-/lib
