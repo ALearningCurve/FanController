@@ -2,7 +2,7 @@
 	"configurations": [
 		{
 			"cwd": "${workspaceFolder}/FanControllerFirmware",
-			"executable": "${workspaceFolder}/FanControllerFirmware/build/debug/${workspaceFolderBasename}.elf",
+			"executable": "${workspaceFolder}/FanControllerFirmware/build/debug/FanControllerFirmware.elf",
 			"name": "Debug NucleoL476RG",
 			"request": "launch",
 			"type": "cortex-debug",
@@ -10,13 +10,13 @@
 			"serverpath": "/usr/bin/st-util",
 			"interface": "swd",
 			"device": "STM32L476RG",
-			"armToolchainPath": "../../rover/firmware/lib/gcc-arm-none-eabi/bin/",
-			"svdFile": "../../rover/firmware/tools/STM32L4x6.svd",
+			"armToolchainPath": "${workspaceFolder}/../../rover/firmware/lib/gcc-arm-none-eabi/bin/",
+			"svdFile": "${workspaceFolder}/../../rover/firmware/tools/STM32L4x6.svd",
 			"preLaunchTask": "BuildNucleo"
 		},
 		{
 			"cwd": "${workspaceFolder}/FanControllerFirmware",
-			"executable": "${workspaceFolder}/FanControllerFirmware/build/debug/${workspaceFolderBasename}.elf",
+			"executable": "${workspaceFolder}/FanControllerFirmware/build/debug/FanControllerFirmware.elf",
 			"name": "Debug STM32L476RG",
 			"request": "launch",
 			"type": "cortex-debug",
